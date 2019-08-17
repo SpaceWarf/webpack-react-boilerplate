@@ -1,8 +1,28 @@
 import React from "react";
+import { Header, Label } from "semantic-ui-react";
 import './App.scss';
 
 const App = () => {
-    return <div className="helloworld">Hello React,Webpack4,Babel7!</div>;
+    return (
+        <div className="App">
+            <Header
+                as="h1"
+                textAlign="center"
+            >
+                Welcome to my React Webpack boilerplate!
+            </Header>
+            <div className="content">
+                This project contains every necessary files and configuration to create an
+                <br />
+                app with React, Redux, Sass and Semantic UI all bundled with Webpack.
+            </div>
+            <div className="content">
+                Run <Label>yarn</Label> or <Label>npm i</Label> to install dependencies, then
+                <br />
+                run either <Label>yarn start</Label> or <Label>npm run start</Label> to launch the app.
+            </div>
+        </div>
+    );
 };
 
 export default App;
